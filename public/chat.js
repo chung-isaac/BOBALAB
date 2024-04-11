@@ -73,7 +73,7 @@ document.getElementById('regenerateButton').addEventListener('click', function()
         .then(data => {
             if (data.canRegenerate) {
                 // Code to trigger the regenerate action, e.g., re-submit the form or directly call the function
-                document.getElementById('userMessage').value = "";
+                document.getElementById('userMessage').value = "Regenerate my message!";
                 document.getElementById('chatForm').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
             } else {
                 console.log('Cannot regenerate yet.'); // Handle as appropriate
