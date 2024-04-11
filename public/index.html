@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bot Chat</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Main Page</title>
+    <style>
+        /* Add any specific styling for your buttons here */
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
 </head>
 <body>
-    <div id="controlPanel">
-        <button onclick="setResponseSet(1)">Set 1</button>
-        <button onclick="setResponseSet(2)">Set 2</button>
-        <button onclick="setResponseSet(3)">Set 3</button>
-        <button onclick="setResponseSet(4)">Set 4</button>
-    </div>
-    <div id="chatContainer">
-        <div id="chatHistory"></div>
-    </div>
-    <div id="inputContainer">
-        <form id="chatForm">
-            <input type="text" id="userMessage" placeholder="Type a message..." required>
-            <button type="submit">Send</button>
-        </form>
-        <button type="button" id="regenerateButton">Regenerate</button>
-    </div>
 
-    <script src="chat.js"></script>
+<h2>Select a Page to Visit</h2>
+
+<!-- Button linking to Page 1 -->
+<a href="ai_model.html" class="button">Go to AI Prompt Model</a>
+
+<!-- Button linking to Page 2 -->
+<a href="grammar_model.html" class="button">Go to Proofreader Model</a>
+
 </body>
 </html>

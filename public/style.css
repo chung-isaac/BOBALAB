@@ -34,3 +34,8 @@ html, body {
     z-index: 1; /* Ensures input stays above the chat history */
 }
 
+.highlighted {
+    background-color: yellow;
+    cursor: pointer;
+}
+
