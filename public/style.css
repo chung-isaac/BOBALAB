@@ -1,6 +1,14 @@
-body {
+.montserrat-project {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, button {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-top: 10%;
+    font-size: 1.5rem;
 }
 
 #userMessage, #botResponse {
@@ -9,6 +17,9 @@ body {
 
 #chatHistory {
     padding: 10px; /* Adjust as needed */
+    max-height: 450px; /* Adjust based on your layout */
+    overflow-y: auto;
+    margin-bottom: 50px;
 }
 
 html, body {
@@ -39,3 +50,29 @@ html, body {
     cursor: pointer;
 }
 
+#regenerateButton, #controlPanel {
+    margin-top: 25px;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
