@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bot Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controlPanel">
+        <button onclick="setResponseSet(1)">Set 1</button>
+        <button onclick="setResponseSet(2)">Set 2</button>
+        <button onclick="setResponseSet(3)">Set 3</button>
+        <button onclick="setResponseSet(4)">Set 4</button>
+    </div>
+    <div id="chatContainer">
+        <div id="chatHistory"></div>
+    </div>
+    <div id="inputContainer">
+        <form id="chatForm">
+            <input type="text" id="userMessage" placeholder="Type a message..." required>
+            <button type="submit">Send</button>
+        </form>
+        <button type="button" id="regenerateButton">Regenerate</button>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
