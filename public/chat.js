@@ -47,7 +47,9 @@ document.getElementById('chatForm').addEventListener('submit', function(e) {
     const userMessage = document.getElementById('userMessage').value;
 
     // Append user's message to chat history
-    appendMessageToChatHistory("You: " + userMessage);
+    if (userMessage != '') {
+        appendMessageToChatHistory("You: " + userMessage);
+    }
     
     fetch('/message', {
         method: 'POST',
@@ -73,7 +75,7 @@ document.getElementById('regenerateButton').addEventListener('click', function()
         .then(data => {
             if (data.canRegenerate) {
                 // Code to trigger the regenerate action, e.g., re-submit the form or directly call the function
-                document.getElementById('userMessage').value = "Regenerate my message!";
+                document.getElementById('userMessage').value = '';
                 document.getElementById('chatForm').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
             } else {
                 console.log('Cannot regenerate yet.'); // Handle as appropriate
