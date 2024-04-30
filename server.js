@@ -6,10 +6,10 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 const responseSets = {
-    1: ["Response 1.1", "Response 1.2", "Response 1.3", "Response 1.4", "Response 1.5"],
+    1: ["Good Response 1", "Good Response 2", "Good Response 3", "Good Response 4", "Good Response 5"],
     2: ["Response 2.1", "Response 2.2", "Response 2.3", "Response 2.4", "Response 2.5"],
     3: ["Response 3.1", "Response 3.2", "Response 3.3", "Response 3.4", "Response 3.5"],
-    4: ["Response 4.1", "Response 4.2", "Response 4.3", "Response 4.4", "Response 4.5"]
+    4: ["Bad Response 1", "Bad Response 2", "Bad Response 3", "Bad Response 4", "Bad Response 5"]
 };
 
 let currentResponseIndex = 0;
