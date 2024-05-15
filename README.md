@@ -12,7 +12,6 @@ This project implements a chat bot that responds to user inputs with pre-recorde
     - [CSS](#css)
     - [JavaScript](#javascript)
 5. [Customization](#customization)
-6. [License](#license)
 
 ## Features
 
@@ -66,19 +65,15 @@ This project implements a chat bot that responds to user inputs with pre-recorde
 
 - **script.js**: Contains the logic for loading responses, handling user input, and displaying responses with animations.
 
-#### Code Documentation
+#### Customization
 
-##### parseCSV
+##### Response Logic
 ```javascript
 /**
- * Parses CSV text into an array of response objects.
- * @param {string} text - The CSV text to parse.
- * @returns {Array<Object>} - Array of response objects with id, response, and rating properties.
+ * Sets the current response function to display good responses (rating >= 4).
  */
-function parseCSV(text) {
-    const lines = text.split('\n').slice(1); // Assuming the first line is headers
-    return lines.map(line => {
-        const [id, response, rating] = line.split(',');
-        return { id, response, rating: parseInt(rating, 10) };
-    });
+function pickGoodResponses() {
+    currentResponseFunction = () => filterAndDisplayResponses(response => response.rating >= 4);
 }
+```
+To modify / add / remove response logic functions, format them similarly. In this example, the function sets (but does not call) the currentResponseFunction to use only responses with a rating greater than or equal to 4.
