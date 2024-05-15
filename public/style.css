@@ -16,8 +16,8 @@ body, button {
 }
 
 #chatHistory {
-    padding: 10px; /* Adjust as needed */
-    max-height: 450px; /* Adjust based on your layout */
+    padding: 10px;
+    max-height: 450px;
     overflow-y: auto;
     margin-bottom: 50px;
 }
@@ -34,15 +34,15 @@ html, body {
     overflow-y: auto;
     display: flex;
     flex-direction: column-reverse;
-    padding-bottom: 260px; /* Adjust this value based on the height of your inputContainer plus some extra space */
+    padding-bottom: 260px;
 }
 
 #inputContainer {
     position: fixed;
-    bottom: 200px; /* Increase this value to move the input bar higher */
+    bottom: 200px;
     left: 0;
     width: 100%;
-    z-index: 1; /* Ensures input stays above the chat history */
+    z-index: 1;
 }
 
 .highlighted {
@@ -52,6 +52,16 @@ html, body {
 
 #regenerateButton, #controlPanel {
     margin-top: 25px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
 }
 
 .button {
@@ -75,4 +85,9 @@ html, body {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+.underlined {
+    position: relative;
+    border-bottom: 4px solid red;
 }
