@@ -1,4 +1,4 @@
-# AI Perception Study Model
+# AI Perception Model
 
 This project implements a chat bot that responds to user inputs with pre-recorded responses loaded from a CSV file. The bot provides functionality to select responses based on different criteria, including random, good, bad, and mixed responses. The bot also supports regenerating responses and displays them with a typing animation.
 
