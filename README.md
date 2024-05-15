@@ -18,7 +18,7 @@ This project implements a chat bot that responds to user inputs with pre-recorde
 
 The purpose of this project is to set up a model for an experimental study, where we want to see how generative-AI / LLM responses affect people's perception of it. We specifically want to use it in the scope of education for teachers largely inexperienced with using LLMs. For example, does a bad response cause distrust in other accurate responses? 
 
-This project is still a WIP, but its end-goal is to serve as a data collection tool in controlled experiments. Because of this, note that many features are demonstrational (e.g. the CSV file input, the logic buttons) and will not be in the final model presented in experiments. However, they serve as a good way to see the functionality of the program and debugging :) 
+This project is still a WIP, but its end-goal is to serve as a data collection tool in controlled experiments. Because of this, note that many features are demonstrational (e.g. the CSV file input, the logic buttons) and will not be in the final model presented in experiments. However, they serve as a good way to see the functionality of the program (and for debugging🫠)
 
 ## Features
 
