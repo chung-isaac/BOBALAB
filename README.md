@@ -2,18 +2,23 @@
 
 This project implements a chat bot that responds to user inputs with pre-recorded responses loaded from a CSV file. The bot provides functionality to select responses based on different criteria, including random, good, bad, and mixed responses. The bot also supports regenerating responses and displays them with a typing animation.
 
-The purpose of this project is to set up a model for an experimental study, where we want to see how generative-AI / LLM responses affect people's perception of it. We specifically want to use it in the scope of education for teachers largely inexperienced with using LLMs. For example, does a bad response cause distrust in other accurate responses? This project is still a WIP, but its end goal is to serve as a data collection tool in controlled experiments.
-
 ## Table of Contents
 
-1. [Features](#features)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Code Structure](#code-structure)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Code Structure](#code-structure)
     - [HTML](#html)
     - [CSS](#css)
     - [JavaScript](#javascript)
-5. [Customization](#customization)
+6. [Customization](#customization)
+
+## Introduction
+
+The purpose of this project is to set up a model for an experimental study, where we want to see how generative-AI / LLM responses affect people's perception of it. We specifically want to use it in the scope of education for teachers largely inexperienced with using LLMs. For example, does a bad response cause distrust in other accurate responses? 
+
+This project is still a WIP, but its end-goal is to serve as a data collection tool in controlled experiments. Because of this, note that many features are demonstrational (e.g. the CSV file input, the logic buttons) and will not be in the final model presented in experiments. However, they serve as a good way to see the functionality of the program and debugging :) 
 
 ## Features
 
